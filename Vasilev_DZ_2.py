@@ -7,14 +7,14 @@
 '''
 print('Введите числитель.')
 a = float(input())
-f = 0
-while f < 1:
+flag = 0
+while flag < 1:
     print('Введите знаминатель.')
     b = float(input())
     if b == 0:
         print('Error: На ноль делить нельзя!')
     else:
-        f += 10
+        flag += 10
 print('Результат: ', a / b)
 
 
@@ -25,15 +25,15 @@ print('Результат: ', a / b)
 '''
 from math import *
 print('Введите стоимость покупки.')
-s = float(input())
-s2 = 0
-s3 = 0
-if s > 20:
-    s2 = s - (s * 35 / 100)
-    s3 = s * 35 / 100
+stoimost = float(input())
+itog_stoimost = 0
+skidka = 0
+if stoimost > 20:
+    itog_stoimost = stoimost - (stoimost * 35 / 100)
+    skidka = stoimost * 35 / 100
 else:
-    s2 = s 
-print('Итоговая стоимоть покупки: ' + str(round(s2, 2)), 'Размер предоставленной скидки: ' + str(round(s3, 2)), sep = '\n')
+    itog_stoimost = stoimost 
+print('Итоговая стоимоть покупки: ' + str(round(itog_stoimost, 2)), 'Размер предоставленной скидки: ' + str(round(skidka, 2)), sep = '\n')
 
 
 '''
@@ -42,10 +42,10 @@ print('Итоговая стоимоть покупки: ' + str(round(s2, 2)), 
 '''
 print('Введите число от 1 до 12')
 a = int(input())
-f = 0
-while f < 1:
+flag = 0
+while flag < 1:
     if 0 < a < 13:
-        f += 10
+        flag += 10
     else:
         print('Error: Введите корректное число!')
         a = int(input())
